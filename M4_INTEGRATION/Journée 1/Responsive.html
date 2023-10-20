@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+
+<style>
+    .a {
+        grid-area: A ;
+        text-align: center ;
+        background-color: rgb(125, 224, 125) ;
+        height:80px ;
+        border: 2px solid black ;
+        
+    }
+
+    .b {
+        grid-area: B ;
+        text-align: center ;
+        background-color: rgb(125, 224, 216) ;
+        height:80px ;
+        border: 2px solid black ;
+        
+    }
+
+    .c {
+        grid-area: C ;
+        text-align: center ;
+        background-color: rgb(184, 133, 192) ;
+        height:450px ;
+        border: 2px solid black ;
+        
+    }
+
+    .d {
+        grid-area: D ;
+        text-align: center ;
+        background-color: rgb(218, 177, 250) ;
+        height:350px ;
+        border: 2px solid black ;
+        
+    }
+
+    .e {
+        grid-area: E ;
+        text-align: center ;
+        background-color: rgb(236, 245, 116) ;
+        height:450px ;
+        border: 2px solid black ;
+        
+    }
+
+    .f {
+        grid-area: F ;
+        text-align: center ;
+        background-color: rgb(220, 119, 72) ;
+        height:80px ;
+        border: 2px solid black ;
+    }
+
+    @media screen and (min-width:769px) and (max-width: 2140px) {
+
+        .container {
+        display:grid ;
+        grid-template-areas:
+        'A A A'
+        'C B E'
+        'C D E'
+        'F F F' ;
+        grid-gap:20px ;
+        }
+    }
+
+
+    @media screen and (max-width: 480px) {
+        
+        .container {
+             display: grid ;
+             grid-template-areas:
+             'A'
+             'B'
+             'C'
+             'D'
+             'E'
+             'F' ;
+             grid-gap:20px ;
+             }
+            
+        
+        .a, .b, .c, .d, .e, .f {
+            height:80px ;
+        }
+
+    }
+
+    @media screen and (min-width:481px) and (max-width: 768px) {
+
+        .container {
+            display: grid ;
+            grid-template-areas:
+            'A A'
+            'B B'
+            'C D'
+            'E F' ;
+            grid-gap:20px ;
+            }
+
+            .a, .b, .c, .d, .e, .f {
+            height:80px ;
+        }
+    }
+                           
+</style>    
+<body>
+
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+        <div class="e">E</div>
+        <div class="f">F</div>
+    </div>
+    
+</body>
+</html>

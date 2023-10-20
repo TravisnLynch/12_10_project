@@ -1,0 +1,110 @@
+header {
+    display: bock ;
+    height: 80px ;
+    font-family: monospace ;
+    }
+
+footer > p {
+    float:right ;
+    font-size: 10px ;
+    font-family: monospace
+    }
+
+li {
+    float: right ;
+    display: inline ;
+    font-size: 15px ;
+    margin: 30px ;
+    }
+    
+li:hover {
+     background-color:rgb(243, 199, 117) ;
+     font-size: 15px ;
+     padding: 10px ;
+     border-radius: 5px ;
+    }
+         
+.main:hover, .left:hover, .mid:hover, .right:hover {
+    background-color: #f3fffc ;
+    border-radius: 5px;
+}
+
+.author, .author1, .author2, .author3 {
+    width: 40px ;
+}
+
+.author1:hover, .author2:hover, .author3:hover, .author:hover {
+    width: 45px ;
+}
+
+.a, .c, .d, .e {
+    width: 280px ;
+}
+
+
+@media screen and (min-width:769px) and (max-width: 2140px) {
+    .main {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'main main main' ;
+        }
+    
+    .webpage {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'left mid right' ;
+        }
+    }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'main' ;
+    }
+
+    .webpage {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'left'
+        'mid' 
+        'right' ;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'main' ;
+    }
+
+    .webpage {
+        display: grid ;
+        margin: 30px ;
+        padding: 25px ;
+        font-family: monospace ;
+        grid-template-areas:
+        'left' 
+        'mid' 
+        'right' ;
+    }
+
+}
+
